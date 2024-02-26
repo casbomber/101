@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    }
+    #game{
+        border: 1px solid black;
+    }
+    #player{
+       
+        background: transparent url(Duck.png) 0 0 no-repeat;
+        width: 16px;
+        height: 16px;
+        margin: 2em auto; 
+        position: absolute;
+        top: 44px;
+        left: 20px;
+        transform: translate(-50%, -50%);
+       
+
+    }
+    @keyframes run{
+        100%{
+            background-position: -32px,0;
+        }
+    }
+    .run{
+        animation: run 150ms steps(2) infinite;
+ 
+    }
+    .jump1 {
+        animation: up 500ms ease-in-out;
+    }
+    .jump2 {
+        animation: up 350ms ease-in-out;
+    }
+    @keyframes up{
+        0%{top: 45px;}
+        30%{top: 15px;}
+        70%{top: 15px;}
+        100%{top: 45px;}
+
+    }
+    #obstacle{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 69px;
+        left: 390px;
+    }
